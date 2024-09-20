@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\vendor\font-awesome\less\" />
+    <Folder Include="wwwroot\vendor\font-awesome\scss\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MB.Infrastructure.EFCore\MB_Infrastructure.EFCore.csproj" />
+    <ProjectReference Include="..\MB_Application\MB_Application.csproj" />
+    <ProjectReference Include="..\MB_Application_Contracts\MB_Application_Contracts.csproj" />
+    <ProjectReference Include="..\MB_Domain\MB_Domain.csproj" />
+    <ProjectReference Include="..\MB_Infrastructure_Query\MB_Infrastructure_Query.csproj" />
+  </ItemGroup>
+
+</Project>

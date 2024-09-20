@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MB_Application_Contracts\MB_Application_Contracts.csproj" />
+    <ProjectReference Include="..\MB_Domain\MB_Domain.csproj" />
+  </ItemGroup>
+
+</Project>
